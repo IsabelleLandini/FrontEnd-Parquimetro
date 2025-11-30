@@ -1,0 +1,99 @@
+/*resetar*/
+*{
+margin: 0;
+padding: 0;
+}
+
+/*estilização geral*/
+body{
+    font-family:'Times New Roman', Times, serif;
+    line-height: normal;
+    background-color: rgb(113, 113, 131);
+    display:flex;/*flexbox para centralizar*/
+    justify-content: center;/*centralizar horizontalmente*/
+    align-items: center; /*centralizar verticalmente*/
+    height: 100vh;
+}
+
+/*estilização do container*/
+.container{
+    width: 500px; /*largura*/
+    height: 200px; /*altura*/
+    padding:20px 20px; 
+    box-sizing: border-box; /* Faz o padding e a borda serem incluídos no tamanho total */
+    border-radius: 10px; /*arredondar bordas*/
+    background-color: rgb(63, 176, 228); /*para destacar do fundo*/
+    display: flex; /*flexbox para alinhar itens*/
+    flex-direction:column; /*alinhamento em coluna*/
+    align-items: center;
+    justify-content: center; /*centralizar itens*/
+    gap:16px; /*espaçamento entre itens*/
+    margin-bottom: 2px; /*espaçamento externo*/
+    padding-bottom: 5px; /*espaçamento inferior*/
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/*Estilização do título*/
+h1{
+    color: black;
+    margin-bottom: 5px; /*espaçamento externo*/
+    padding-bottom: 5px; /*espaçamento inferior*/
+    text-align: center;
+    font-weight: bold; /*negrito*/
+    font-size: 30px;
+}
+
+label{
+    color: black;
+    margin-bottom: 5px; /*espaçamento externo*/
+    padding-bottom: 5px; /*espaçamento inferior*/
+    font-size: 18px;
+    text-align: center; /*centralizar*/
+    font-weight: bold; /*negrito*/
+
+}
+
+input[type="number"]{ /*onde vão entrar os valores*/
+    border: 1px solid #ccc; /*borda cinza clara*/
+    height: 30px;
+    width: 140px; /*largura total*/
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    padding: 5px; /*enchimento interno*/
+    border: 1px solid #ccc; /*borda cinza clara*/
+    font-size: 16px;
+    text-align: center; /*centralizar texto*/
+}
+
+button{
+    padding: 6px 5px; /*enchimento interno*/
+    background-color: black; /*cor de fundo*/
+    color: white; /*cor do texto*/
+    border: none; /*remover borda padrão*/
+    border-radius: 20px; /*arredondar bordas*/
+    font-size: 15px;
+    cursor: pointer; /*mudar cursor ao passar por cima*/
+    width: auto; /*ajustar largura ao conteúdo*/
+    height: 25px; /*ajusta a altura para o texto ficar centralizado*/ 
+    display: flex; /*flex para alinhar o conteudo*/
+    align-items: center; /*centraliza verticalmente o texto*/
+    justify-content: center; /* centraliza horizoltamente*/
+    box-sizing: border-box;
+
+}
+/*estilização  especifica do botão*/
+button:hover{
+    background-color: whitesmoke; /*cor de fundo ao passar o mouse*/
+    color:black;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 70%;
+    justify-content: center;
+}
